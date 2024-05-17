@@ -2,7 +2,6 @@ import java.util.Scanner;
 public class gestoreStalla {
 	String[] stalla = new String [5]; 
 	Scanner input = new Scanner(System.in);
-	String campi;
 
 	void menu() {
 		System.out.println("");
@@ -35,6 +34,7 @@ public class gestoreStalla {
 				System.out.println("Provenienza: " + provenienza);
 				System.out.println("Alimentazione: " + alimentazione);
 				System.out.println("Valore: " + valore + " $");
+				System.out.println("");
 				stalla[i] = animale;
 			}
 			break;
@@ -44,14 +44,16 @@ public class gestoreStalla {
 		System.out.println("Inserire ID da ricercare:  ");
 		int idRicerca = Integer.parseInt(input.nextLine());
 		for (int i=0; i<stalla.length; i++) {
-			if (idRicerca == campi[0]) {
-				System.out.println();
-			}
-
+			String campi[] = stalla[i].split(";")
+					if(campi[0]=idRicerca) {
+						
+					}
 		}
-
-
 
 	}
 
+
+	
 }
+
+
