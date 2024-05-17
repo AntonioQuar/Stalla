@@ -52,7 +52,7 @@ public class gestoreStalla {
 			int idAnimale = Integer.parseInt(campi[0]);
 			if(idAnimale == id) {
 				System.out.println("   ***SCHEDA ANIMALE***   ");
-				System.out.println("id: " + id);
+				System.out.println("id: " + campi[0]);
 				System.out.println("Tipo animale: " + campi[1]);
 				System.out.println("Provenienza: " + campi[2]);
 				System.out.println("Alimentazione: " + campi[3]);
