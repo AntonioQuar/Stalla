@@ -3,7 +3,7 @@ public class gestoreStalla {
 	String[] stalla = new String [5]; 
 	Scanner input = new Scanner(System.in);
 	int i = 0;
-	
+
 	void menu() {
 		System.out.println("");
 		System.out.println("   ***MENU***   ");
@@ -13,32 +13,43 @@ public class gestoreStalla {
 		System.out.println("4) Rimuovi animale");
 		System.out.println("5) EXIT");
 	}
-	
+
 	void aggiungiAnimale() {
-		int id = Integer.parseInt(input.nextLine());
-		String tipoAnimale =  input.nextLine();
-		String provenienza = input.nextLine();
-		String alimentazione = input.nextLine();
-		double valore = Double.parseDouble(input.nextLine());
-		String animale = id + ";" + tipoAnimale + ";" + provenienza + ";" + alimentazione + ";" + valore;
-		String[] campi = animale.split(";");
-		System.out.println("Hai aggiunto: ");
-		System.out.println("id: " + id);
-		System.out.println("Tipo animale: " + tipoAnimale);
-		System.out.println("Provenienza: " + provenienza);
-		System.out.println("Alientazione: " + alimentazione);
-		System.out.println("Valore: " + valore);
-		stalla[i] = animale;
-		i++;
-		
+		for(int i = 0; i<stalla.length; i++) {
+			if (stalla[i] == null) {
+				System.out.println("Aggiungi animale:  ");
+				System.out.println("id: ");
+				int id = Integer.parseInt(input.nextLine());
+				System.out.println("Tipo animale: ");
+				String tipoAnimale =  input.nextLine();
+				System.out.println("Provenienza: ");
+				String provenienza = input.nextLine();
+				System.out.println("Alimentazione: ");
+				String alimentazione = input.nextLine();
+				System.out.println("Valore: ");
+				double valore = Double.parseDouble(input.nextLine());
+				String animale = id + ";" + tipoAnimale + ";" + provenienza + ";" + alimentazione + ";" + valore;
+				System.out.println("Hai aggiunto: ");
+				System.out.println("id: " + id);
+				System.out.println("Tipo animale: " + tipoAnimale);
+				System.out.println("Provenienza: " + provenienza);
+				System.out.println("Alimentazione: " + alimentazione);
+				System.out.println("Valore: " + valore + " $");
+				stalla[i] = animale;
+			}
+			break;
+		}
 	}
 	void leggiAnimale() {
-	System.out.println("Inserire ID da ricercare:  ");
-	int idRicerca = Integer.parseInt(input.nextLine());
-	for (int i=0; i<stalla.length; i++) {
-	if (idRicerca ==   ) 
-	
-	}
+		System.out.println("Inserire ID da ricercare:  ");
+		int idRicerca = Integer.parseInt(input.nextLine());
+		for (int i=0; i<stalla.length; i++) {
+			String[] campi = stalla[i].split(";");
+			if (idRicerca == Integer.parseInt(campi[i])) {
+				System.out.println();
+			}
+
+		}
 
 
 
