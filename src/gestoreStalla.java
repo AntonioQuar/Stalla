@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class gestoreStalla {
 	String[] stalla = new String [5]; 
 	Scanner input = new Scanner(System.in);
-	int i = 0;
+	String campi;
 
 	void menu() {
 		System.out.println("");
@@ -44,8 +44,7 @@ public class gestoreStalla {
 		System.out.println("Inserire ID da ricercare:  ");
 		int idRicerca = Integer.parseInt(input.nextLine());
 		for (int i=0; i<stalla.length; i++) {
-			String[] campi = stalla[i].split(";");
-			if (idRicerca == Integer.parseInt(campi[i])) {
+			if (idRicerca == campi[0]) {
 				System.out.println();
 			}
 
