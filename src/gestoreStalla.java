@@ -50,7 +50,7 @@ public class gestoreStalla {
 			animale = stalla[i];
 			String[] campi = animale.split(";");
 			int idAnimale = Integer.parseInt(campi[0]);
-			if(idAnimale == id && stalla[i] == null) {
+			if(idAnimale == id) {
 				System.out.println("   ***SCHEDA ANIMALE***   ");
 				System.out.println("id: " + id);
 				System.out.println("Tipo animale: " + campi[0]);
@@ -58,6 +58,7 @@ public class gestoreStalla {
 				System.out.println("Alimentazione: " + campi[2]);
 				System.out.println("Valore: " + campi[3] + " $");
 				System.out.println("");
+				break;
 			}
 		}
 	}
