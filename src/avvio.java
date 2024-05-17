@@ -16,7 +16,9 @@ public class Avvio {
 				input.nextLine();
 				break;
 			case 2:
-				metodi.leggiAnimale();
+				System.out.println("Inserire ID da ricercare:  ");
+				int id = Integer.parseInt(input.nextLine());
+				metodi.leggiAnimale(id);
 				System.out.println("Premi un tasto per continuare");
 				input.nextLine();
 				break;

@@ -36,24 +36,34 @@ public class gestoreStalla {
 				System.out.println("Valore: " + valore + " $");
 				System.out.println("");
 				stalla[i] = animale;
+				break;
 			}
-			break;
+			else
+				System.out.println("ATTENZIONE! Stalla piena");
 		}
+
 	}
-	void leggiAnimale() {
-		System.out.println("Inserire ID da ricercare:  ");
-		int idRicerca = Integer.parseInt(input.nextLine());
+
+	void leggiAnimale(int id) {
+		String animale;
 		for (int i=0; i<stalla.length; i++) {
-			String campi[] = stalla[i].split(";")
-					if(campi[0]=idRicerca) {
-						
-					}
+			animale = stalla[i];
+			String[] campi = animale.split(";");
+			int idAnimale = Integer.parseInt(campi[0]);
+			if(idAnimale == id && stalla[i] == null) {
+				System.out.println("   ***SCHEDA ANIMALE***   ");
+				System.out.println("id: " + id);
+				System.out.println("Tipo animale: " + campi[0]);
+				System.out.println("Provenienza: " + campi[1]);
+				System.out.println("Alimentazione: " + campi[2]);
+				System.out.println("Valore: " + campi[3] + " $");
+				System.out.println("");
+			}
 		}
-
 	}
 
 
-	
+
 }
 
 
