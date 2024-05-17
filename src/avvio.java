@@ -20,16 +20,16 @@ public class Avvio {
 				System.out.println("Premi un tasto per continuare");
 				input.nextLine();
 				break;
-			case 3:
-				metodi.leggiAnimali();
-				System.out.println("Premi un tasto per continuare");
-				input.nextLine();
-				break;
-			case 4:
-				metodi.rimuoviAnimali();
-				System.out.println("Premi un tasto per continuare");
-				input.nextLine();
-				break;
+//			case 3:
+//				metodi.leggiAnimali();
+//				System.out.println("Premi un tasto per continuare");
+//				input.nextLine();
+//				break;
+//			case 4:
+//				metodi.rimuoviAnimali();
+//				System.out.println("Premi un tasto per continuare");
+//				input.nextLine();
+//				break;
 			}
 		}
 		while (scelta !=5);

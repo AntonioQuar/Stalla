@@ -36,7 +36,7 @@ public class gestoreStalla {
 	System.out.println("Inserire ID da ricercare:  ");
 	int idRicerca = Integer.parseInt(input.nextLine());
 	for (int i=0; i<stalla.length; i++) {
-	if (idRicerca ==  ) 
+	if (idRicerca ==   ) 
 	
 	}
 
