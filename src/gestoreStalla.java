@@ -65,27 +65,44 @@ public class gestoreStalla {
 	void leggiAnimali() {
 		String animale;
 		for (int i=0; i<stalla.length; i++)
-		if (stalla[i] != null ) {
-			animale = stalla[i];
-			String[] campi = animale.split(";");
-			{
-				System.out.println("   ***SCHEDA ANIMALE***   ");
-				System.out.println("id: " + campi[0]);
-				System.out.println("Tipo animale: " + campi[0]);
-				System.out.println("Provenienza: " + campi[1]);
-				System.out.println("Alimentazione: " + campi[2]);
-				System.out.println("Valore: " + campi[3] + " $");
-				System.out.println("");
+			if (stalla[i] != null ) {
+				animale = stalla[i];
+				String[] campi = animale.split(";");
+				{
+					System.out.println("   ***SCHEDA ANIMALE***   ");
+					System.out.println("id: " + campi[0]);
+					System.out.println("Tipo animale: " + campi[0]);
+					System.out.println("Provenienza: " + campi[1]);
+					System.out.println("Alimentazione: " + campi[2]);
+					System.out.println("Valore: " + campi[3] + " $");
+					System.out.println("");
+				}
+			}
+	}
+
+	void rimuoviAnimali(int idEliminato) {
+		String animale;
+		for (int i=0; i<stalla.length; i++) {
+			if (stalla[i] != null ) {
+				animale = stalla[i];
+				String[] campi = animale.split(";");
+				int idAnimale = Integer.parseInt(campi[0]);
+				if(idAnimale == idEliminato) {
+					System.out.println("   ***SCHEDA ANIMALE***   ");
+					System.out.println("id: " + campi[0]);
+					System.out.println("Tipo animale: " + campi[1]);
+					System.out.println("Provenienza: " + campi[2]);
+					System.out.println("Alimentazione: " + campi[3]);
+					System.out.println("Valore: " + campi[4] + " $");
+					System.out.println("");
+					System.out.println("L'animale è stato ELIMINATO.");
+					System.out.println("");
+					stalla [i] = null;
+					break;
+				}
 			}
 		}
 	}
-
-
-
-
-
-
-
 }
 
 
