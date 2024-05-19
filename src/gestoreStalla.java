@@ -6,8 +6,8 @@ public class gestoreStalla {
 	void menu() {
 		System.out.println("");
 		System.out.println("   ***MENU***   ");
-		System.out.println("1) Aggiungi animale.");
-		System.out.println("2) visualizza animale.");
+		System.out.println("1) Aggiungi animale");
+		System.out.println("2) Visualizza animale");
 		System.out.println("3) Visualizza tutti gli animali");
 		System.out.println("4) Rimuovi animale");
 		System.out.println("5) EXIT");
@@ -41,7 +41,6 @@ public class gestoreStalla {
 			else
 				System.out.println("ATTENZIONE! Stalla piena");
 		}
-
 	}
 
 	void leggiAnimale(int id) {
@@ -62,23 +61,27 @@ public class gestoreStalla {
 			}
 		}
 	}
-void leggiAnimali() {
-	String animale;
-	for (int i=0; i<stalla.length; i++) {
-		animale = stalla[i];
-		String[] campi = animale.split(";");
-		 {
-			System.out.println("   ***SCHEDA ANIMALE***   ");
-			System.out.println("id: " + campi[0]);
-			System.out.println("Tipo animale: " + campi[0]);
-			System.out.println("Provenienza: " + campi[1]);
-			System.out.println("Alimentazione: " + campi[2]);
-			System.out.println("Valore: " + campi[3] + " $");
-			System.out.println("");
-			break;
+
+	void leggiAnimali() {
+		String animale;
+		for (int i=0; i<stalla.length; i++)
+		if (stalla[i] != null ) {
+			animale = stalla[i];
+			String[] campi = animale.split(";");
+			{
+				System.out.println("   ***SCHEDA ANIMALE***   ");
+				System.out.println("id: " + campi[0]);
+				System.out.println("Tipo animale: " + campi[0]);
+				System.out.println("Provenienza: " + campi[1]);
+				System.out.println("Alimentazione: " + campi[2]);
+				System.out.println("Valore: " + campi[3] + " $");
+				System.out.println("");
+			}
 		}
 	}
-}
+
+
+
 
 
 

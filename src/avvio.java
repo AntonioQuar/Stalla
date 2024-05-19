@@ -25,7 +25,7 @@ public class Avvio {
 			case 3:
 				metodi.leggiAnimali();
 				System.out.println("Premi un tasto per continuare");
-			input.nextLine();
+				input.nextLine();
 				break;
 //			case 4:
 //				metodi.rimuoviAnimali(int id);
