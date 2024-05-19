@@ -22,11 +22,11 @@ public class Avvio {
 				System.out.println("Premi un tasto per continuare");
 				input.nextLine();
 				break;
-			case 3:
-				metodi.leggiAnimali();
-				System.out.println("Premi un tasto per continuare");
-			input.nextLine();
-				break;
+//			case 3:
+//				metodi.leggiAnimali();
+//				System.out.println("Premi un tasto per continuare");
+//			input.nextLine();
+//				break;
 //			case 4:
 //				metodi.rimuoviAnimali(int id);
 //				System.out.println("Premi un tasto per continuare");
@@ -38,3 +38,4 @@ public class Avvio {
 		System.out.println("Statt buon.");
 	}	
 }
+

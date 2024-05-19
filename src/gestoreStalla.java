@@ -62,23 +62,7 @@ public class gestoreStalla {
 			}
 		}
 	}
-void leggiAnimali() {
-	String animale;
-	for (int i=0; i<stalla.length; i++) {
-		animale = stalla[i];
-		String[] campi = animale.split(";");
-		 {
-			System.out.println("   ***SCHEDA ANIMALE***   ");
-			System.out.println("id: " + campi[0]);
-			System.out.println("Tipo animale: " + campi[0]);
-			System.out.println("Provenienza: " + campi[1]);
-			System.out.println("Alimentazione: " + campi[2]);
-			System.out.println("Valore: " + campi[3] + " $");
-			System.out.println("");
-			break;
-		}
-	}
-}
+
 
 
 
