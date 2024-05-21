@@ -14,6 +14,7 @@ public class gestoreStalla {
 	}
 
 	void aggiungiAnimale() {
+		boolean flag = true;
 		for(int i = 0; i<stalla.length; i++) {
 			if (stalla[i] == null) {
 				System.out.println("Aggiungi animale:  ");
@@ -36,10 +37,12 @@ public class gestoreStalla {
 				System.out.println("Valore: " + valore + " $");
 				System.out.println("");
 				stalla[i] = animale;
+				flag = false;
 				break;
 			}
-			else
-				System.out.println("ATTENZIONE! Stalla piena");
+		}
+		if (flag) {
+			System.out.println("ATTENZIONE! Stalla piena");
 		}
 	}
 
